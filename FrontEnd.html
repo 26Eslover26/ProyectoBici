@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Alquila tu bici </title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type = "text/javascript" src="BackEnd/controlador.js"></script>
+        <style>
+            table, th, td, caption
+            {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Alquila tu Bici </h1>
+       
+        <button onclick="consultar()"> Consultar </button>
+        
+        <div id="idDivConsulta"></div>
+
+        <div>
+            <input type="number" id="miId" placeholder="Id">
+            <input type="text" id="brand" placeholder="Marca">
+            <input type="number" id="model" placeholder="Modelo">
+            <input type="number" id="category" placeholder="Category_Id">
+            <input type="text" id="name" placeholder="Nombre">
+        </div>
+        
+        <button onclick="insertar()"> Insertar </button>
+        <button onclick="actualizar()"> Actualizar </button>
+        <button onclick="consultarId()"> Consultar Id </button>
+        
+        <h1> Lista de clientes </h1>
+        <button onclick = "listar()"> Listar clientes </button>
+        <div id = "contenedorC"></div>
+
+        <div>
+            <input type = "number" id = "idC" placeholder="Id">
+            <input type = "text" id = "nameC" placeholder="Nombre">
+            <input type = "text" id = "email" placeholder="E-mail">
+            <input type = "number" id = "age" placeholder="Edad">
+        </div>
+
+        <button onclick="crearC()"> Agregar </button>
+        <button onclick="actualizarC()"> Actualizar </button>
+        <button onclick="consultarC()"> Consultar Id </button>
+
+        <h1> Mensajes </h1>
+        <button onclick = "ver()"> Ver mensajes </button>
+        <div id = "contenedorM"></div>
+
+        <div>
+            <input type = "number" id = "idM" placeholder="Id">
+            <input type = "text" id = "message" placeholder="Escribe tu mensaje">
+        </div>
+
+        <button onclick="crearM()"> Enviar </button>
+        <button onclick="actualizarM()"> Actualizar </button>
+        <button onclick="consultarM()"> Consultar Id </button>
+    </body>
+</html>
